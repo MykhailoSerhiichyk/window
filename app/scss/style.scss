@@ -2,7 +2,108 @@
 @import 'global';
 @import 'fonts';
 
+// start header
 
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.header__text {
+    max-width: 220px;
+    width: 100%;
+    font-size: 14px;
+    color: #0096dc;
+    margin-left: 26px;
+    margin-right: auto;
+}
+
+.header__link {
+    font-weight: 700;
+    color: $green;
+    font-size: 14px;
+    padding: 8px 18px 8px 53px;
+    width: 170px;
+    border: 2px solid $green;
+    border-radius: 10px;
+    margin-right: 54px;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 30px;
+        height: 30px;
+        background-image: url(../images/icons/header-link.png);
+        left: 13px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.header__time {
+    margin-right: 70px;
+    color: $title;
+    padding-left: 50px;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: "";
+        background-image: url(../images/icons/header-clock.png);
+        width: 30px;
+        height: 30px;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+    }
+
+    &-text {
+        font-size: 14px;
+    }
+
+    &-number {
+        font-size: 18px;
+        font-weight: 600;
+    }
+}
+
+.header__phone-inner {
+
+    a {
+        display: block;
+    }
+
+    .header__phone {
+        color: $title;
+        font-weight: 700;
+        font-size: 23px;
+        margin-bottom: 10px;
+        padding-left: 35px;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            background-image: url(../images/icons/header-phone.png);
+            width: 20px;
+            height: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+        }
+    }
+
+    .header__call {
+        color: #0089cc;
+        text-decoration: underline;
+        text-align: right;
+    }
+}
+
+// end header
 
 
 @import 'media';
