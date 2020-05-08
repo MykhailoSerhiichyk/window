@@ -581,7 +581,43 @@
 
 // end advantages
 
+// start stock
+
+.stock {
+    background-image: url(../images/stock-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 600px;
+    padding: 75px 0;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        font-size: 48px;
+        line-height: 48px;
+        color: #008cce;
+        font-weight: 700;
+        margin-bottom: 65px;
+    }
+
+    &__text {
+        color: #000;
+        font-size: 24px;
+        line-height: 40px;
+        max-width: 400px;
+        width: 100%;
+        margin-bottom: 70px;
+    }
+}
+
+// end stock
+
+
 @import 'media';
 
-  
+
   
