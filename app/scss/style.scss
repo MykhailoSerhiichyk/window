@@ -495,10 +495,52 @@
     }
 }
 
-
-
-
 // end sale
+
+// start works
+
+.works {
+    padding: 75px 0 50px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        margin-bottom: 30px;
+        border-radius: 10px;
+        position: relative;
+        transition: all .3s;
+
+        img {
+            border-radius: 10px;
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 40px;
+            height: 40px;
+            background-image: url(../images/icons/zoom-in.png);
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &:hover {
+            transform: scale(1.5);
+            z-index: 1;
+
+            &::before {
+                display: none;
+            }
+        }
+    }
+}
+
+// end works
 
 @import 'media';
 
