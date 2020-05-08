@@ -130,3 +130,24 @@ body {
         }
     }
 }
+
+.title {
+    color: $title;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 48px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 100px;
+
+    &::after {
+        position: absolute;
+        content: "";
+        width: 170px;
+        height: 2px;
+        background-image: url(../images/icons/title-line.jpg);
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -15px;
+    }
+}
