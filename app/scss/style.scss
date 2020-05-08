@@ -369,6 +369,137 @@
 
 // end range
 
+// start sale 
+
+.sale {
+    background-color: #f7f7f7;
+    padding: 75px 0 100px;
+
+    &-content__tabs {
+
+        .tabs {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 90px;
+    
+            .tab {
+                text-align: center;
+                flex-basis: 25%;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 48px;
+                color: #000;
+                text-decoration: underline;
+                text-decoration-style: dotted;
+                cursor: pointer;
+                border-top: 10px solid transparent;
+                padding-top: 20px;
+                position: relative;
+
+                &::before {
+                    position: absolute;
+                    content: "";
+                    border: 20px solid transparent; 
+                    border-top: 20px solid $blue;
+                    top: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    display: none;
+                }
+
+                &.active {
+                    border-color: $blue;
+                    text-decoration: none;
+
+                    &::before {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        .tab__content {
+
+            .tab-item {
+                display: none;
+
+                &.active-tab {
+                    display: block;
+                }
+
+                .sale__inner {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .sale__images {
+                        margin-top: -70px;
+                    }
+
+                    .sale__items {
+                        margin-left: -40px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        max-width: 480px;
+                        width: 100%;
+
+                        .sale__item {
+                            margin-left: 40px;
+                            text-align: center;
+                            max-width: 110px;
+                            width: 100%;
+                            margin-bottom: 60px;
+                            min-height: 170px;
+                            position: relative;
+                            padding-bottom: 36px;
+
+                            &-images {
+                                
+                                img {
+                                    border-radius: 50%;
+                                }
+                            }
+
+                            &-title {
+                                font-size: 14px;
+                                line-height: 20px;
+                                color: #000;
+                                font-weight: 600;
+                                margin-top: 15px;
+                            }
+
+                            &-text-inner {
+                                position: absolute;
+                                bottom: 0;
+                                left: 0;
+                                right: 0;
+
+                                .sale__item-text {
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    color: $blue;
+                                    font-weight: 700;
+                                }
+
+                                .sale__item-subtext {
+                                    font-size: 12px;
+                                    line-height: 16px;
+                                    color: #000;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+// end sale
+
 @import 'media';
 
   
