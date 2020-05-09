@@ -581,6 +581,40 @@
 
 // end advantages
 
+// start payment
+
+.payment {
+    padding: 75px 0 85px;
+
+    &__title {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 48px;
+        color: #000;
+        margin-bottom: 70px;
+        text-align: center;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+
+        &-text {
+            font-size: 20px;
+            line-height: 30px;
+            margin-left: 30px;
+        }
+    }
+}
+
+// end payment
+
 // start stock
 
 .stock {
@@ -594,6 +628,7 @@
     &__inner {
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
     &__title {
@@ -612,10 +647,200 @@
         width: 100%;
         margin-bottom: 70px;
     }
+
+    &__box {
+        max-width: 260px;
+        width: 100%;
+        border: 1px solid #d1d1d1;
+        border-radius: 10px;
+        background-color: #fff;
+        padding: 20px 25px;
+
+        &-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: #000000;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 18px;
+        }
+
+        .countdown {
+            font-family: sans-serif;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            font-weight: 100;
+            text-align: center;
+            font-size: 30px;
+            max-width: 210px;
+            width: 100%;
+        }
+          
+        .countdown-number {
+            padding: 0;
+            border-radius: 3px;
+            background: transparent;
+            display: inline-block;
+            width: 40px;
+        }
+          
+        .countdown-time {
+            padding: 0;
+            border-radius: 10px;
+            background-image: linear-gradient( -90deg, rgb(57,57,57) 0%, rgb(20,20,20) 100%);
+            display: inline-block;
+            width: 40px;
+            height: 50px;
+            line-height: 50px;
+            font-family: 'Open Sans Condensed', sans-serif;
+            font-weight: 700;
+            font-size: 28px;
+            color: #efefef;
+        }
+          
+        .countdown-text {
+            display: block;
+            padding-top: 5px;
+            font-size: 16px;
+            color: #000;
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 33px;
+        }
+    }
 }
 
 // end stock
 
+// start footer
+
+.footer__content {
+    padding: 80px 0;
+
+    &-inner {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.footer__map {
+    max-width: 570px;
+    width: 100%;
+    min-height: 466px;
+
+    iframe {
+        width: 100%;
+        min-height: 466px;
+    }
+}
+
+.footer__contacts {
+    max-width: 470px;
+    width: 100%;
+    padding-right: 35px;
+    margin-top: -20px;
+
+    &-title {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 48px;
+        color: #008cce;
+    }
+
+    &-adress {
+        font-weight: 600;
+        color: #000;
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 20px;
+    }
+
+    &-phone {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 26px;
+        color: #000;
+        margin-bottom: 20px;
+
+        span {
+            font-weight: 400;
+        }
+    }
+
+    &-email {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 18px;
+        color: #000;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #000;
+    }
+
+    &-work {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 26px;
+        color: #000;
+    }
+}
+
+.footer__question {
+    background-color: #00a0eb;
+    padding: 80px 0;
+
+    &-inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-text {
+        font-size: 30px;
+        color: #ffffff;
+    }
+
+    &-link {
+        font-size: 30px;
+        line-height: 30px;
+        font-weight: 600;
+        color: #ffffff;
+        border-bottom: 2px solid #ffffff;
+        margin-left: 38px;
+    }
+}
+
+.footer__copy-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 36px 0;
+}
+
+.footer__copy-text {
+    color: #000;
+    max-width: 180px;
+    width: 100%;
+}
+
+.footer__copy-phone {
+    display: block;
+    color: $title;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.footer__copy-email {
+    display: block;
+    text-align: right;
+    font-size: 14px;
+    line-height: 26px;
+    color: #0090d5;
+    text-decoration: underline;
+}
+
+// end footer
 
 @import 'media';
 
