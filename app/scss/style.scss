@@ -8,7 +8,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
+    min-height: 100px;
 }
 
 .header__text {
@@ -387,13 +387,13 @@
                 flex-basis: 25%;
                 font-weight: 600;
                 font-size: 20px;
-                line-height: 48px;
+                line-height: 26px;
                 color: #000;
                 text-decoration: underline;
                 text-decoration-style: dotted;
                 cursor: pointer;
                 border-top: 10px solid transparent;
-                padding-top: 20px;
+                padding-top: 30px;
                 position: relative;
 
                 &::before {
